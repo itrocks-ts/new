@@ -1,0 +1,54 @@
+{
+	"author": {
+		"name": "Baptiste Pillot",
+		"email": "baptiste@pillot.fr"
+	},
+	"dependencies": {
+		"@itrocks/action": "latest",
+		"@itrocks/edit": "latest",
+		"@itrocks/route": "latest"
+	},
+	"description": "Generic action-based new object form in HTML and JSON",
+	"devDependencies": {
+		"typescript": "~5.6"
+	},
+	"engines": {
+		"node": ">=18"
+	},
+	"exports": "./cjs/new.js",
+	"homepage": "https://it.rocks",
+	"files": [
+		"LICENSE",
+		"README.md",
+		"cjs/*",
+		"routes.json",
+		"!*.map"
+	],
+	"keywords": [
+		"API",
+		"backend",
+		"component",
+		"create",
+		"form",
+		"generic",
+		"html",
+		"it.rocks",
+		"json",
+		"new",
+		"render",
+		"standard",
+		"UI",
+		"UX"
+	],
+	"license": "ISC",
+	"name": "@itrocks/new",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/itrocks-ts/new.git"
+	},
+	"scripts": {
+		"build": "tsc -p tsconfig.json"
+	},
+	"types": "./cjs/new.d.ts",
+	"version": "0.0.1"
+}
