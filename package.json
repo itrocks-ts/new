@@ -10,6 +10,7 @@
 	},
 	"description": "Generic action-based new object form in HTML and JSON",
 	"devDependencies": {
+		"sass": "^1.83",
 		"typescript": "~5.6"
 	},
 	"engines": {
@@ -21,6 +22,7 @@
 		"LICENSE",
 		"README.md",
 		"cjs/*",
+		"css/*",
 		"routes.json",
 		"!*.map"
 	],
@@ -47,8 +49,9 @@
 		"url": "git+https://github.com/itrocks-ts/new.git"
 	},
 	"scripts": {
-		"build": "tsc -p tsconfig.json"
+		"build": "tsc -p tsconfig.json && npm run build:css",
+		"build:css": "sass --no-source-map src:css && cp src/*.svg css/"
 	},
 	"types": "./cjs/new.d.ts",
-	"version": "0.0.1"
+	"version": "0.0.3"
 }
