@@ -48,9 +48,9 @@
 		"url": "git+https://github.com/itrocks-ts/new.git"
 	},
 	"scripts": {
-		"build": "tsc -p tsconfig.json && npm run build:css",
+		"build": "tsc && npm run build:css",
 		"build:css": "sass --no-source-map src:css && cp src/*.svg css/"
 	},
 	"types": "./cjs/new.d.ts",
-	"version": "0.0.6"
+	"version": "0.0.7"
 }
