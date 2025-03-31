@@ -4,7 +4,7 @@ import { Route }         from '@itrocks/route'
 
 @Need(NOTHING)
 @Route('/new')
-export class New extends Edit
+export class New<T extends object = object> extends Edit<T>
 {
 
 }
